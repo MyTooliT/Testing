@@ -4,7 +4,7 @@
 
 1. Windows 10 installieren
 
-2. [Python (3.6 + )](https://www.python.org/downloads/) installieren
+2. [Python (`3.6+`)](https://www.python.org/downloads/) installieren
 
    1. **Add Python to Path!**
 
