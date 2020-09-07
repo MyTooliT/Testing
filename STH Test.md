@@ -6,44 +6,57 @@
 
 2. [Python (`3.6+`)](https://www.python.org/downloads/) installieren
 
-   1. **Add Python to Path!**
+   - Nicht vergessen **„Add Python to Path“** zu selektieren
 
-3. Simplicity Studio installieren (Commander wird benötigt)
+3. [Simplicity Studio](https://www.silabs.com/products/development-tools/software/simplicity-studio) installieren (Simplicity Commander wird benötigt)
 
 4. [Sourcetree](https://www.sourcetreeapp.com/) installieren
 
-5. Git Repo klonen
+5. Git-Repositories in `Documents`-Ordner klonen
 
-   1. STH-Repo in Documents
-   2. ICOc-Repo in Documents
+   1. [STH-Repo](https://github.com/MyTooliT/ICOc) klonen
+   2. [ICOc-Repo](https://github.com/MyTooliT/STH) klonen
 
 6. [Peakcan Basic API](https://www.peak-system.com/PCAN-USB-FD.365.0.html) installieren
 
-7. Script zur installation der Libarys im ICOc-Repo ausführen
+7. Skript zur Installation der benötigten Python-Pakete im `ICOc`-Repo ausführen
 
-   1. In ordner gehen
-   2. hShift+STRG+Rechtsklick
-   3. Powershell hier öffnen
-   4. Eingeben: pip install -r requirements.txt
+   1. Powershell im Ordner `ICOc` öffnen
+      1. <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + Rechts-Click im Explorer
+      2. „Powershell hier öffnen“ auswählen
+   2. Den folgenden Befehl ausführen:
 
-8. In STH einen Ordner `builds` erstellen und die OTA und .hex dateien downloaden
+   ```sh
+   pip install -r requirements.txt
+   ```
 
-9. im ICOc-Repo das config.yaml anpassen
+8. Im STH-Ordner einen neuen Unter-Ordner namens `builds` erstellen und die [aktuellen Binaries](https://github.com/MyTooliT/STH/releases) dort speichern
 
-   1. port (`chgport` in cmd to see which one it is)
-   2. Serialnumber of developer board
-   3. Name des PCB ändern
-   4. Production Date auf datum (optional)
-   5. Operator-Name auf eigenen wechseln (optional)
+   1. [Flash-Image (`.hex`)](https://github.com/MyTooliT/STH/releases/download/2.1.10/manufacturingImageSthv2.1.10.hex)
+   2. [OTA-File (`.gbl`)](https://github.com/MyTooliT/STH/releases/download/2.1.10/OtaServer.gbl)
 
-10. Skript-Unterordner (könnte bei dir z.B. `C:\Users\clemens\Documents\ICOc\Scripts` sein) zum User-Pfad (oder System-Pfad) hinzuzufügen. Eine Beschreibung wie das funktioniert gibt es z.B. [hier](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/).
+9. Im ICOc-Repo `config.yaml` anpassen. Eventuell sind folgende Daten zu ändern:
 
-    Der Vorteil davon ist, dass du dann auf die Programme im `Scripts`-Ordner von überall zugreifen kannst. Du kannst danach also z.B. durch Eingabe von
+   1. Port
+      1. `chgport` in Eingabeaufforderung (Powershell) eingeben um zu sehen welcher Port verwendet werden soll
+      2. `STH` → `Programming Board` → `COM Interface` ändern
+   2. Seriennummer des Boards
+      1. Seriennummer ermitteln: Steht im LCD des Programming-Boards ganz unten
+      2. `STH` → `Programming Board` → `Serial Number` ändern
+   3. Name des PCB (`STH` → `Name`)
+   4. Production Date auf Datum des PCB (`STH` → `Production Date`) (Optional)
+   5. Operator-Name auf den eigenen Namen setzen (`Operator` → `Name`) (Optional)
 
-    Test-STH
+10. Skript-Unterordner (üblicherweise `%USERPROFILE%\Documents\Projects\ICOc\Scripts`) zum User-Pfad (oder System-Pfad) hinzuzufügen. Eine Beschreibung wie das funktioniert gibt es z.B. [hier](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/). Danach kann man auf die Programme im `Scripts`-Ordner von einem beliebigen Ordner aus in der Powershell zugreifen.
 
-    in der Powershell direkt die Tests starten.
+11. Execution Policies ändern damit Powershell-Skripte ausgeführt werden können
 
-11. Execution_Policies ändern damit scripte funktionieren (`Set-ExecutionPolicy RemoteSigned`) (ADMINMODE)
+    ```sh
+    Set-ExecutionPolicy RemoteSigned
+    ```
 
-12. Test-STH ausführen
+12. `Test-STH` ausführen:
+
+    ```sh
+    Test-STH -v
+    ```
