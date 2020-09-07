@@ -4,7 +4,7 @@
 
 1. Windows 10 installieren
 
-2. [Python (3.6 + )]( https://www.python.org/downloads/) installieren
+2. [Python (3.6 + )](https://www.python.org/downloads/) installieren
 
    1. **Add Python to Path!!!!!!!**
 
@@ -40,10 +40,10 @@
 
     Der Vorteil davon ist, dass du dann auf die Programme im `Scripts`-Ordner von überall zugreifen kannst. Du kannst danach also z.B. durch Eingabe von
 
-      Test-STH
+    Test-STH
 
-    in der Powershell direkt die Tests starten. 
+    in der Powershell direkt die Tests starten.
 
-11. Execution_Policies ändern damit scripte funktionieren (`Set-ExecutionPolicy RemoteSigned`)  (ADMINMODE)
+11. Execution_Policies ändern damit scripte funktionieren (`Set-ExecutionPolicy RemoteSigned`) (ADMINMODE)
 
 12. Test-STH ausführen
