@@ -2,6 +2,8 @@
 
 ## Abkürzungen
 
+- **AEM**: Advanced Energy Monitoring
+- **ESD**: Electro Statical Discharge
 - **STH**: Sensory Tool Holder
 - **SHA**: Sensory Holder Assembly
 
@@ -85,7 +87,8 @@
 
 ## Test-Vorgang
 
-1. Im ICOc-Repo `config.yaml` anpassen. Eventuell sind folgende Daten zu ändern:
+1. Schalter an Programming-Board in Position „AEM“ schieben (Stromversorgung über Programming-Board)
+2. Im ICOc-Repo `config.yaml` anpassen. Eventuell sind folgende Daten zu ändern:
 
    1. Port
       1. `chgport` in Eingabeaufforderung (Powershell) eingeben um zu sehen welcher Port verwendet werden soll
@@ -94,11 +97,24 @@
       1. Seriennummer ermitteln: Steht im LCD des Programming-Boards ganz unten
       2. `STH` → `Programming Board` → `Serial Number` ändern
    3. Name des PCB (`STH` → `Name`)
+      - Neue Boards sollten üblicherweise den Namen „Tanja“ haben
    4. Production Date auf Datum des PCB (`STH` → `Production Date`) (Optional)
    5. Operator-Name auf den eigenen Namen setzen (`Operator` → `Name`) (Optional)
 
-2. `Test-STH` in Powershell ausführen:
+3. `Test-STH` in Powershell ausführen:
 
    ```sh
    Test-STH -v
    ```
+
+4. Test-Ergebnis ansehen
+
+   - Testergebnis `OK`: gehe zu Schritt 5
+   - Testergebnis `FAILED` oder `ERROR`: Fehlersuche
+
+5. Freigegeben für Einbau
+6. Test für eingebaute SHA (STH) und vergossene STH wiederholen
+
+   - Schalter an Programming-Board in Position „USB“ schieben
+
+7. Nachdem alle Test erfolgreich abgeschlossen wurden: Fertig für Versand
