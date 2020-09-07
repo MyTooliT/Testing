@@ -1,5 +1,34 @@
 # STH Tests
 
+## Abkürzungen
+
+- **STH**: Sensory Tool Holder
+- **SHA**: Sensory Holder Assembly
+
+## Hardware
+
+![Arbeitsplatz](Pictures/Arbeitsplatz.jpg)
+
+1. PC aufbauen und Peripherie (Maus, Tastatur, Bildschirm) anschließen
+2. ESD-Matte aufbauen und anschließen
+3. Stromversorgung für STU einrichten
+
+   - Power-Injector (24V) (oder selten für 5V: Micro-USB)
+
+   ![24V Vs. 5V](Pictures/24V%20Vs.%205V.jpg)
+
+4. PEAK-CAN-Adapter an USB-Port anschließen
+5. Programming-Board an USB-Port anschließen
+6. Debug-Adapter von Programming-Board (mittels Adapter Cable) mit SHA/STH verbinden
+
+   ![Programming Board](Pictures/Programming%20Board.jpg)
+
+   ![SHA](Pictures/SHA.jpg)
+
+7. Blue Gecko Radio und Programming-Board verbinden (Optional)
+
+   ![Blue Gecko](Pictures/Blue%20Gecko.jpg)
+
 ## Software
 
 1. Windows 10 installieren
