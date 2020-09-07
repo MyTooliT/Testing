@@ -6,7 +6,7 @@
 
 2. [Python (3.6 + )](https://www.python.org/downloads/) installieren
 
-   1. **Add Python to Path!!!!!!!**
+   1. **Add Python to Path!**
 
 3. Simplicity Studio installieren (Commander wird benötigt)
 
