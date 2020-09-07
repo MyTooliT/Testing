@@ -35,6 +35,17 @@
    1. [Flash-Image (`.hex`)](https://github.com/MyTooliT/STH/releases/download/2.1.10/manufacturingImageSthv2.1.10.hex)
    2. [OTA-File (`.gbl`)](https://github.com/MyTooliT/STH/releases/download/2.1.10/OtaServer.gbl)
 
+   Nach diesen Schritten sollte die Ordner-Struktur in etwa so aussehen:
+
+   ```
+   Documents
+   ├── ICOc
+   └── STH
+       └── builds
+             ├── manufacturingImageSthv2.1.10.hex
+             └── OtaServer.gbl
+   ```
+
 9. Skript-Unterordner (üblicherweise `%USERPROFILE%\Documents\Projects\ICOc\Scripts`) zum User-Pfad (oder System-Pfad) hinzuzufügen. Eine Beschreibung wie das funktioniert gibt es z.B. [hier](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/). Danach kann man auf die Programme im `Scripts`-Ordner von einem beliebigen Ordner aus in der Powershell zugreifen.
 
 10. Execution Policies ändern damit Powershell-Skripte ausgeführt werden können
