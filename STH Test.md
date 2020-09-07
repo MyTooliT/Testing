@@ -35,7 +35,17 @@
    1. [Flash-Image (`.hex`)](https://github.com/MyTooliT/STH/releases/download/2.1.10/manufacturingImageSthv2.1.10.hex)
    2. [OTA-File (`.gbl`)](https://github.com/MyTooliT/STH/releases/download/2.1.10/OtaServer.gbl)
 
-9. Im ICOc-Repo `config.yaml` anpassen. Eventuell sind folgende Daten zu ändern:
+9. Skript-Unterordner (üblicherweise `%USERPROFILE%\Documents\Projects\ICOc\Scripts`) zum User-Pfad (oder System-Pfad) hinzuzufügen. Eine Beschreibung wie das funktioniert gibt es z.B. [hier](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/). Danach kann man auf die Programme im `Scripts`-Ordner von einem beliebigen Ordner aus in der Powershell zugreifen.
+
+10. Execution Policies ändern damit Powershell-Skripte ausgeführt werden können
+
+    ```sh
+    Set-ExecutionPolicy RemoteSigned
+    ```
+
+## Test-Vorgang
+
+1. Im ICOc-Repo `config.yaml` anpassen. Eventuell sind folgende Daten zu ändern:
 
    1. Port
       1. `chgport` in Eingabeaufforderung (Powershell) eingeben um zu sehen welcher Port verwendet werden soll
@@ -47,16 +57,8 @@
    4. Production Date auf Datum des PCB (`STH` → `Production Date`) (Optional)
    5. Operator-Name auf den eigenen Namen setzen (`Operator` → `Name`) (Optional)
 
-10. Skript-Unterordner (üblicherweise `%USERPROFILE%\Documents\Projects\ICOc\Scripts`) zum User-Pfad (oder System-Pfad) hinzuzufügen. Eine Beschreibung wie das funktioniert gibt es z.B. [hier](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/). Danach kann man auf die Programme im `Scripts`-Ordner von einem beliebigen Ordner aus in der Powershell zugreifen.
+2. `Test-STH` in Powershell ausführen:
 
-11. Execution Policies ändern damit Powershell-Skripte ausgeführt werden können
-
-    ```sh
-    Set-ExecutionPolicy RemoteSigned
-    ```
-
-12. `Test-STH` ausführen:
-
-    ```sh
-    Test-STH -v
-    ```
+   ```sh
+   Test-STH -v
+   ```
