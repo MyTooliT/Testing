@@ -48,7 +48,7 @@
    1. [STH-Repo](https://github.com/MyTooliT/ICOc) klonen
    2. [ICOc-Repo](https://github.com/MyTooliT/STH) klonen
 
-6. [Peakcan Basic API](https://www.peak-system.com/PCAN-USB-FD.365.0.html) installieren
+6. [PEAK-System Gerätetreiber für Windows](https://www.peak-system.com/PCAN-USB-FD.365.0.html) installieren
 
 7. Skript zur Installation der benötigten Python-Pakete im `ICOc`-Repo ausführen
 
