@@ -91,8 +91,15 @@
       2. `STH` → `Programming Board` → `Serial Number` ändern
    2. Name des PCB (`STH` → `Name`)
       - Neue Boards sollten üblicherweise den Namen „Tanja“ haben
-   3. Production Date auf Datum des PCB (`STH` → `Production Date`) (Optional)
-   4. Operator-Name auf den eigenen Namen setzen (`Operator` → `Name`) (Optional)
+   3. Verwendeter Beschleunigungssensor (`STH` → `Acceleration Sensor` → `Sensor`) (Optional): Welcher Sensor verwendet wird lässt sich üblicherweise an Hand eines Sticker an der Rückseite des PCB ermitteln. Ein Sticker mit der Aufschrift
+
+      - `1` weißt dabei auf den Sensor `ADXL1001` hin, während
+      - `2` auf den Sensor `ADXL1002` verweist.
+
+      Falls kein Sticker vorhanden ist, kann eine Lupe oder die Lupenfunktion eines Mobiltelefons recht hilfreich sein um die Identifikation auf dem Sensor zu lesen.
+
+   4. Production Date auf Datum des PCB (`STH` → `Production Date`) (Optional)
+   5. Operator-Name auf den eigenen Namen setzen (`Operator` → `Name`) (Optional)
 
 3. `Test-STH` in Powershell ausführen:
 
