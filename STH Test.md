@@ -61,10 +61,7 @@
    pip install -r requirements.txt
    ```
 
-8. Im STH-Ordner einen neuen Unter-Ordner namens `builds` erstellen und die [aktuellen Binaries](https://github.com/MyTooliT/STH/releases) dort speichern
-
-   1. [Flash-Image (`.hex`)](https://github.com/MyTooliT/STH/releases/download/2.1.10/manufacturingImageSthv2.1.10.hex)
-   2. [OTA-File (`.gbl`)](https://github.com/MyTooliT/STH/releases/download/2.1.10/OtaServer.gbl)
+8. Im STH-Ordner einen neuen Unter-Ordner namens `builds` erstellen und das [aktuelle Binary](https://github.com/MyTooliT/STH/releases) (.hex) dort speichern.
 
    Nach diesen Schritten sollte die Ordner-Struktur in etwa so aussehen:
 
@@ -73,8 +70,7 @@
    ├── ICOc
    └── STH
        └── builds
-             ├── manufacturingImageSthv2.1.10.hex
-             └── OtaServer.gbl
+             └── manufacturingImageSthv2.1.10.hex
    ```
 
 9. Skript-Unterordner (üblicherweise `%USERPROFILE%\Documents\Projects\ICOc\Scripts`) zum User-Pfad (oder System-Pfad) hinzuzufügen. Eine Beschreibung wie das funktioniert gibt es z.B. [hier](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/). Danach kann man auf die Programme im `Scripts`-Ordner von einem beliebigen Ordner aus in der Powershell zugreifen.
@@ -90,16 +86,13 @@
 1. Schalter an Programming-Board in Position „AEM“ schieben (Stromversorgung über Programming-Board)
 2. Im ICOc-Repo `config.yaml` anpassen. Eventuell sind folgende Daten zu ändern:
 
-   1. Port
-      1. `chgport` in Eingabeaufforderung (Powershell) eingeben um zu sehen welcher Port verwendet werden soll
-      2. `STH` → `Programming Board` → `COM Interface` ändern
-   2. Seriennummer des Boards
+   1. Seriennummer des Boards
       1. Seriennummer ermitteln: Steht im LCD des Programming-Boards ganz unten
       2. `STH` → `Programming Board` → `Serial Number` ändern
-   3. Name des PCB (`STH` → `Name`)
+   2. Name des PCB (`STH` → `Name`)
       - Neue Boards sollten üblicherweise den Namen „Tanja“ haben
-   4. Production Date auf Datum des PCB (`STH` → `Production Date`) (Optional)
-   5. Operator-Name auf den eigenen Namen setzen (`Operator` → `Name`) (Optional)
+   3. Production Date auf Datum des PCB (`STH` → `Production Date`) (Optional)
+   4. Operator-Name auf den eigenen Namen setzen (`Operator` → `Name`) (Optional)
 
 3. `Test-STH` in Powershell ausführen:
 
