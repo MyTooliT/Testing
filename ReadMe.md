@@ -6,7 +6,27 @@ Eine Liste der hier [verwendeten Fachbegriffe](https://github.com/MyTooliT/Docum
 
 # Vorbereitung
 
-Damit der Test für die STH und STU durchgeführt werden können benötigt man diverse Software-Komponenten. Der nächste Teil des Texts beschreibt wie man diese installieren kann.
+Damit der Test für die STH durchgeführt werden können benötigt man diverse Hardware und Software-Komponenten. Der nächste Teil des Texts beschreibt als erstes das Hardware-Setup und dann die Installation der benötigten Software.
+
+## Hardware
+
+![Arbeitsplatz](Pictures/Arbeitsplatz.jpg)
+
+1. PC aufbauen und Peripherie (Maus, Tastatur, Bildschirm) anschließen
+2. ESD-Matte aufbauen und anschließen
+3. Stromversorgung für STU einrichten
+
+   - Power-Injector (24V) (oder selten für 5V: Micro-USB)
+
+   ![24V Vs. 5V](Pictures/24V%20Vs.%205V.jpg)
+
+4. PEAK-CAN-Adapter an USB-Port anschließen
+5. Programming-Board an USB-Port anschließen
+6. Debug-Adapter von Programming-Board (mittels Adapter Cable) mit SHA/STH verbinden
+
+   ![Programming Board](Pictures/Programming%20Board.jpg)
+
+   ![SHA](Pictures/SHA.jpg)
 
 ## Software
 
@@ -58,4 +78,4 @@ Damit der Test für die STH und STU durchgeführt werden können benötigt man d
     Set-ExecutionPolicy RemoteSigned
     ```
 
-11. Nachdem die Software-Komponenten nur erfolgreich installiert und eingerichtet wurden kann man nun beim [Hardware-Setup für den STH-Test fortfahren](STH Test.md).
+11. Nachdem die Software-Komponenten nur erfolgreich installiert und eingerichtet wurden kann man nun [STHs testen](STH Test.md).
