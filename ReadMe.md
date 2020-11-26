@@ -42,8 +42,8 @@ Damit der Test für die STH durchgeführt werden können benötigt man diverse H
 
 5. Git-Repositories in `Documents`-Ordner klonen
 
-   1. [STH-Repo](https://github.com/MyTooliT/ICOc) klonen
-   2. [ICOc-Repo](https://github.com/MyTooliT/STH) klonen
+   1. [STH-Repo](https://github.com/MyTooliT/STH) klonen
+   2. [ICOc-Repo](https://github.com/MyTooliT/ICOc) klonen
 
 6. [PEAK-System Gerätetreiber für Windows](https://www.peak-system.com/PCAN-USB-FD.365.0.html) installieren
 
