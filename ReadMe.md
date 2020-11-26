@@ -32,6 +32,8 @@ Damit der Test für eine STH oder STU durchgeführt werden kann benötigt man di
 
    - **STU-Test**: Debug-Adapter von Programming-Board (mittels Adapter Cable) **mit STU verbinden**
 
+     ![STU](Pictures/STU.jpg)
+
 ## Software
 
 1. Windows 10 installieren
