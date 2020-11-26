@@ -6,7 +6,7 @@ Eine Liste der hier [verwendeten Fachbegriffe](https://github.com/MyTooliT/Docum
 
 # Vorbereitung
 
-Damit der Test für die STH durchgeführt werden können benötigt man diverse Hardware und Software-Komponenten. Der nächste Teil des Texts beschreibt als erstes das Hardware-Setup und dann die Installation der benötigten Software.
+Damit der Test für eine STH oder STU durchgeführt werden kann benötigt man diverse Hardware und Software-Komponenten. Der nächste Teil des Texts beschreibt als erstes das Hardware-Setup und dann die Installation der benötigten Software.
 
 ## Hardware
 
@@ -22,11 +22,15 @@ Damit der Test für die STH durchgeführt werden können benötigt man diverse H
 
 4. PEAK-CAN-Adapter an USB-Port anschließen
 5. Programming-Board an USB-Port anschließen
-6. Debug-Adapter von Programming-Board (mittels Adapter Cable) mit SHA/STH verbinden
+6. Je nachdem ob man eine SHA/STH oder STU testen will unterscheidet sich welche Einheit man am Debug-Adapter des Programming-Boards anstecken muss:
 
    ![Programming Board](Pictures/Programming%20Board.jpg)
 
-   ![SHA](Pictures/SHA.jpg)
+   - **STH-Test**: Debug-Adapter von Programming-Board (mittels Adapter Cable) **mit SHA/STH verbinden**
+
+     ![SHA](Pictures/SHA.jpg)
+
+   - **STU-Test**: Debug-Adapter von Programming-Board (mittels Adapter Cable) **mit STU verbinden**
 
 ## Software
 
@@ -43,7 +47,8 @@ Damit der Test für die STH durchgeführt werden können benötigt man diverse H
 5. Git-Repositories in `Documents`-Ordner klonen
 
    1. [STH-Repo](https://github.com/MyTooliT/STH) klonen
-   2. [ICOc-Repo](https://github.com/MyTooliT/ICOc) klonen
+   2. [STU-Repo](https://github.com/MyTooliT/STU) klonen
+   3. [ICOc-Repo](https://github.com/MyTooliT/ICOc) klonen
 
 6. [PEAK-System Gerätetreiber für Windows](https://www.peak-system.com/PCAN-USB-FD.365.0.html) installieren
 
@@ -60,22 +65,32 @@ Damit der Test für die STH durchgeführt werden können benötigt man diverse H
 
 8. Im STH-Ordner einen neuen Unter-Ordner namens `builds` erstellen und das [aktuelle Binary](https://github.com/MyTooliT/STH/releases) (.hex) dort speichern.
 
-   Nach diesen Schritten sollte die Ordner-Struktur in etwa so aussehen:
+9. Im STU-Ordner einen neuen Unter-Ordner namens `builds` erstellen und das [aktuelle Binary](https://github.com/MyTooliT/STU/releases) (.hex) dort speichern.
 
-   ```
-   Documents
-   ├── ICOc
-   └── STH
-       └── builds
-             └── manufacturingImageSthv2.1.10.hex
-   ```
+10. Nach diesen Schritten sollte die Ordner-Struktur in etwa so aussehen:
 
-9. Skript-Unterordner (üblicherweise `%USERPROFILE%\Documents\Projects\ICOc\Scripts`) zum User-Pfad (oder System-Pfad) hinzuzufügen. Eine Beschreibung wie das funktioniert gibt es z.B. [hier](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/). Danach kann man auf die Programme im `Scripts`-Ordner von einem beliebigen Ordner aus in der Powershell zugreifen.
+    ```
+    Documents
+    ├── ICOc
+    ├── STH
+    │   └── builds
+    │        └── manufacturingImageSthv2.1.10.hex
+    └── STU
+        └── builds
+             └── manufacturingImageStuv2.1.10.hex
+    ```
 
-10. Execution Policies ändern damit Powershell-Skripte ausgeführt werden können:
+11. Skript-Unterordner (üblicherweise `%USERPROFILE%\Documents\Projects\ICOc\Scripts`) zum User-Pfad (oder System-Pfad) hinzuzufügen. Eine Beschreibung wie das funktioniert gibt es z.B. [hier](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/). Danach kann man auf die Programme im `Scripts`-Ordner von einem beliebigen Ordner aus in der Powershell zugreifen.
+
+12. Execution Policies ändern damit Powershell-Skripte ausgeführt werden können:
 
     ```sh
     Set-ExecutionPolicy RemoteSigned
     ```
 
-11. Nachdem die Software-Komponenten nur erfolgreich installiert und eingerichtet wurden kann man nun [STHs testen](STH Test.md).
+13. Nachdem die Software-Komponenten nur erfolgreich installiert und eingerichtet wurden kann man mit
+
+    - dem [STH-Test](STH Test.md) oder
+    - dem [STU-Test](STU Test.md)
+
+    fortfahren.
