@@ -1,12 +1,5 @@
 # STH Tests
 
-## Abkürzungen
-
-- **AEM**: Advanced Energy Monitoring
-- **ESD**: Electro Statical Discharge
-- **STH**: Sensory Tool Holder
-- **SHA**: Sensory Holder Assembly
-
 ## Hardware
 
 ![Arbeitsplatz](Pictures/Arbeitsplatz.jpg)
