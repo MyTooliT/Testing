@@ -20,10 +20,6 @@
 
    ![SHA](Pictures/SHA.jpg)
 
-7. Blue Gecko Radio und Programming-Board verbinden (Optional)
-
-   ![Blue Gecko](Pictures/Blue%20Gecko.jpg)
-
 ## Software
 
 1. Windows 10 installieren
