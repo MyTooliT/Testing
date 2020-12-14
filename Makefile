@@ -7,7 +7,8 @@ epub:
 html:
 	# Generate (GitBook) HTML document
 	Rscript -e "bookdown::render_book('Preparation.md', 'bookdown::gitbook')"
-	Rscript -e "file.rename('Testing.html', 'index.html')"
+	# Rename main HTML file for GitHub pages
+	Rscript -e "file.rename('Bookdown/Testing.html', 'Bookdown/index.html')"
 
 pdf:
 	# Generate PDF
