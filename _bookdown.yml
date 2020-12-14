@@ -1,0 +1,8 @@
+book_filename:
+  Testing
+delete_merged_file: true
+output_dir: Bookdown
+rmd_files:
+  - Preparation.md
+  - STH-Test.md
+  - STU-Test.md
