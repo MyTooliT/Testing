@@ -17,7 +17,9 @@ jobs:
         run: Rscript -e "install.packages('bookdown')"
 
       - name: Install TeX
-        run: brew install --cask basictex
+        run: |
+          brew install --cask basictex
+          export PATH=$PATH:/Library/TeX/texbin
 
       - name: Build book
         run: make
