@@ -14,12 +14,7 @@ jobs:
       - uses: r-lib/actions/setup-pandoc@v1
 
       - name: Install bookdown
-        run: Rscript -e "install.packages('bookdown')"
-
-      - name: Install TeX
-        run: |
-          brew install --cask basictex
-          export PATH=$PATH:/Library/TeX/texbin
+        run: Rscript -e "install.packages(c('rmarkdown', 'bookdown'))"
 
       - name: Build book
         run: make
