@@ -1,3 +1,10 @@
+---
+title: STH & STU Tests
+author: MyTooliT
+github-repo: MyTooliT/Testing
+description: "STH & STU Test Guidelines for the ICOTronic system: https://www.mytoolit.com/ICOtronic"
+---
+
 # Vorbereitung
 
 Damit der Test für eine STH oder STU durchgeführt werden kann benötigt man diverse Hardware und Software-Komponenten. Der nächste Teil des Texts beschreibt als erstes das Hardware-Setup und dann die Installation der benötigten Software.
