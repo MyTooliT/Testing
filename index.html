@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Testing.utf8</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Testing.utf8" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Testing.utf8" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path=""><a href="#vorbereitung"><i class="fa fa-check"></i><b>1</b> Vorbereitung</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path=""><a href="#hardware"><i class="fa fa-check"></i><b>1.1</b> Hardware</a></li>
+<li class="chapter" data-level="1.2" data-path=""><a href="#software"><i class="fa fa-check"></i><b>1.2</b> Software</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path=""><a href="#sth-tests"><i class="fa fa-check"></i><b>2</b> STH Tests</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path=""><a href="#test-vorgang"><i class="fa fa-check"></i><b>2.1</b> Test-Vorgang</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path=""><a href="#stu-tests"><i class="fa fa-check"></i><b>3</b> STU Tests</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path=""><a href="#test-vorgang-1"><i class="fa fa-check"></i><b>3.1</b> Test-Vorgang</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<!--bookdown:title:end-->
+<!--bookdown:title:start-->
+<div id="vorbereitung" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Vorbereitung</h1>
+<p>Damit der Test für eine STH oder STU durchgeführt werden kann benötigt man diverse Hardware und Software-Komponenten. Der nächste Teil des Texts beschreibt als erstes das Hardware-Setup und dann die Installation der benötigten Software.</p>
+<div id="hardware" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Hardware</h2>
+<div class="figure">
+<img src="Pictures/Arbeitsplatz.jpg" alt="" />
+<p class="caption">Arbeitsplatz</p>
+</div>
+<ol style="list-style-type: decimal">
+<li><p>PC aufbauen und Peripherie (Maus, Tastatur, Bildschirm) anschließen</p></li>
+<li><p>ESD-Matte aufbauen und anschließen</p></li>
+<li><p>Stromversorgung für STU einrichten</p>
+<ul>
+<li>Power-Injector (24V) (oder selten für 5V: Micro-USB)</li>
+</ul>
+<div class="figure">
+<img src="Pictures/24V%20Vs.%205V.jpg" alt="" />
+<p class="caption">24V Vs. 5V</p>
+</div></li>
+<li><p>PEAK-CAN-Adapter an USB-Port anschließen</p></li>
+<li><p>Programming-Board an USB-Port anschließen</p></li>
+<li><p>Je nachdem ob man eine SHA/STH oder STU testen will unterscheidet sich welche Einheit man am Debug-Adapter des Programming-Boards anstecken muss:</p>
+<div class="figure">
+<img src="Pictures/Programming%20Board.jpg" alt="" />
+<p class="caption">Programming Board</p>
+</div>
+<ul>
+<li><p><strong>STH-Test</strong>: Debug-Adapter von Programming-Board (mittels Adapter Cable) <strong>mit SHA/STH verbinden</strong></p>
+<div class="figure">
+<img src="Pictures/SHA.jpg" alt="" />
+<p class="caption">SHA</p>
+</div></li>
+<li><p><strong>STU-Test</strong>: Debug-Adapter von Programming-Board (mittels Adapter Cable) <strong>mit STU verbinden</strong></p>
+<div class="figure">
+<img src="Pictures/STU.jpg" alt="" />
+<p class="caption">STU</p>
+</div></li>
+</ul></li>
+</ol>
+</div>
+<div id="software" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Software</h2>
+<ol style="list-style-type: decimal">
+<li><p>Windows 10 installieren</p></li>
+<li><p><a href="https://www.python.org/downloads/">Python (<code>3.6+</code>)</a> installieren</p>
+<ul>
+<li>Nicht vergessen <strong>„Add Python to Path“</strong> zu selektieren</li>
+</ul></li>
+<li><p><a href="https://www.silabs.com/products/development-tools/software/simplicity-studio">Simplicity Studio</a> installieren (Simplicity Commander wird benötigt)</p></li>
+<li><p><a href="https://www.sourcetreeapp.com/">Sourcetree</a> installieren</p></li>
+<li><p>Git-Repositories in <code>Documents</code>-Ordner klonen</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://github.com/MyTooliT/STH">STH-Repo</a> klonen</li>
+<li><a href="https://github.com/MyTooliT/STU">STU-Repo</a> klonen</li>
+<li><a href="https://github.com/MyTooliT/ICOc">ICOc-Repo</a> klonen</li>
+</ol></li>
+<li><p><a href="https://www.peak-system.com/PCAN-USB-FD.365.0.html">PEAK-System Gerätetreiber für Windows</a> installieren</p></li>
+<li><p>Skript zur Installation der benötigten Python-Pakete im <code>ICOc</code>-Repo ausführen</p>
+<ol style="list-style-type: decimal">
+<li>Powershell im Ordner <code>ICOc</code> öffnen
+<ol style="list-style-type: decimal">
+<li><kbd>Shift</kbd> + <kbd>Ctrl</kbd> + Rechts-Click im Explorer</li>
+<li>„Powershell hier öffnen“ auswählen</li>
+</ol></li>
+<li>Den folgenden Befehl ausführen:</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install -r requirements.txt</span></code></pre></div></li>
+<li><p>Im STH-Ordner einen neuen Unter-Ordner namens <code>builds</code> erstellen und das <a href="https://github.com/MyTooliT/STH/releases">aktuelle Binary</a> (.hex) dort speichern.</p></li>
+<li><p>Im STU-Ordner einen neuen Unter-Ordner namens <code>builds</code> erstellen und das <a href="https://github.com/MyTooliT/STU/releases">aktuelle Binary</a> (.hex) dort speichern.</p></li>
+<li><p>Nach diesen Schritten sollte die Ordner-Struktur in etwa so aussehen:</p>
+<pre><code>Documents
+├── ICOc
+├── STH
+│   └── builds
+│        └── manufacturingImageSthv2.1.10.hex
+└── STU
+    └── builds
+         └── manufacturingImageStuv2.1.10.hex</code></pre></li>
+<li><p>Skript-Unterordner (üblicherweise <code>%USERPROFILE%\Documents\Projects\ICOc\Scripts</code>) zum User-Pfad (oder System-Pfad) hinzuzufügen. Eine Beschreibung wie das funktioniert gibt es z.B. <a href="https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/">hier</a>. Danach kann man auf die Programme im <code>Scripts</code>-Ordner von einem beliebigen Ordner aus in der Powershell zugreifen.</p></li>
+<li><p>Execution Policies ändern damit Powershell-Skripte ausgeführt werden können:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Set-ExecutionPolicy</span> RemoteSigned</span></code></pre></div></li>
+<li><p>Nachdem die Software-Komponenten nur erfolgreich installiert und eingerichtet wurden kann man mit</p>
+<ul>
+<li>dem <a href="STH-Test.md">STH-Test</a> oder</li>
+<li>dem <a href="STU-Test.md">STU-Test</a></li>
+</ul>
+<p>fortfahren.</p></li>
+</ol>
+
+</div>
+</div>
+<div id="sth-tests" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> STH Tests</h1>
+<div id="test-vorgang" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Test-Vorgang</h2>
+<ol style="list-style-type: decimal">
+<li><p>Schalter an Programming-Board in Position „AEM“ schieben (Stromversorgung über Programming-Board)</p></li>
+<li><p>Im ICOc-Repo <code>config.yaml</code> anpassen. Eventuell sind folgende Daten zu ändern:</p>
+<ol style="list-style-type: decimal">
+<li><p>Seriennummer des Boards</p>
+<ol style="list-style-type: decimal">
+<li>Seriennummer ermitteln: Steht im LCD des Programming-Boards ganz unten</li>
+<li><code>STH</code> → <code>Programming Board</code> → <code>Serial Number</code> ändern</li>
+</ol></li>
+<li><p>Name des PCB (<code>STH</code> → <code>Name</code>)</p>
+<ul>
+<li>Neue Boards sollten üblicherweise den Namen „Tanja“ haben</li>
+</ul></li>
+<li><p>Verwendeter Beschleunigungssensor (<code>STH</code> → <code>Acceleration Sensor</code> → <code>Sensor</code>) (Optional): Welcher Sensor verwendet wird lässt sich üblicherweise an Hand eines Sticker an der Rückseite des PCB ermitteln. Ein Sticker mit der Aufschrift</p>
+<ul>
+<li><code>1</code> weißt dabei auf den Sensor <code>ADXL1001</code> hin, während</li>
+<li><code>2</code> auf den Sensor <code>ADXL1002</code> verweist.</li>
+</ul>
+<p>Falls kein Sticker vorhanden ist, kann eine Lupe oder die Lupenfunktion eines Mobiltelefons recht hilfreich sein um die Identifikation auf dem Sensor zu lesen.</p></li>
+<li><p>Production Date auf Datum des PCB (<code>STH</code> → <code>Production Date</code>) (Optional)</p></li>
+<li><p>Operator-Name auf den eigenen Namen setzen (<code>Operator</code> → <code>Name</code>) (Optional)</p></li>
+</ol></li>
+<li><p><code>Test-STH</code> in Powershell ausführen:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Test-STH</span> -v</span></code></pre></div></li>
+<li><p>Test-Ergebnis ansehen</p>
+<ul>
+<li>Testergebnis <code>OK</code>: gehe zu Schritt 5</li>
+<li>Testergebnis <code>FAILED</code> oder <code>ERROR</code>: Fehlersuche</li>
+</ul></li>
+<li><p>Freigegeben für Einbau</p></li>
+<li><p>Test für eingebaute SHA (STH) und vergossene STH wiederholen</p>
+<ul>
+<li>Schalter an Programming-Board in Position „USB“ schieben</li>
+</ul></li>
+<li><p>Nachdem alle Test erfolgreich abgeschlossen wurden: Fertig für Versand</p></li>
+</ol>
+
+</div>
+</div>
+<div id="stu-tests" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> STU Tests</h1>
+<div id="test-vorgang-1" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Test-Vorgang</h2>
+<ol style="list-style-type: decimal">
+<li><p>Im ICOc-Repo <code>config.yaml</code> anpassen. Eventuell sind folgende Daten zu ändern:</p>
+<ol style="list-style-type: decimal">
+<li>Seriennummer des Boards
+<ol style="list-style-type: decimal">
+<li>Seriennummer ermitteln: Steht im LCD des Programming-Boards ganz unten</li>
+<li><code>STU</code> → <code>Programming Board</code> → <code>Serial Number</code> ändern</li>
+</ol></li>
+<li>Production Date auf Datum des PCB (<code>STU</code> → <code>Production Date</code>) (Optional)</li>
+<li>Operator-Name auf den eigenen Namen setzen (<code>Operator</code> → <code>Name</code>) (Optional)</li>
+</ol></li>
+<li><p><code>Test-STU</code> in Powershell ausführen:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Test-STU</span> -v</span></code></pre></div></li>
+<li><p>Test-Ergebnis ansehen</p>
+<ul>
+<li>Testergebnis <code>OK</code>: gehe zu Schritt 4</li>
+<li>Testergebnis <code>FAILED</code> oder <code>ERROR</code>: Fehlersuche</li>
+</ul></li>
+<li><p>Nachdem alle Test erfolgreich abgeschlossen wurden: Fertig für Versand</p></li>
+</ol>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Testing.pdf", "Testing.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
