@@ -6,7 +6,7 @@ epub:
 
 html:
 	# Generate (GitBook) HTML document
-	Rscript -e "bookdown::render_book('Preparation.md', 'bookdown::gitbook', output_dir='Bookdown/HTML')"
+	Rscript -e "bookdown::render_book('Preparation.md', 'bookdown::gitbook')"
 
 pdf:
 	# Generate PDF
