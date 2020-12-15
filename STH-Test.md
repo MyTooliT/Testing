@@ -1,4 +1,4 @@
-# STH Tests
+# STH-Test
 
 ## Test-Vorgang
 

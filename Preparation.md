@@ -93,7 +93,7 @@ Damit der Test für eine STH oder STU durchgeführt werden kann benötigt man di
 
 13. Nachdem die Software-Komponenten nur erfolgreich installiert und eingerichtet wurden kann man mit
 
-    - dem [STH-Test](STH-Test.md) oder
-    - dem [STU-Test](STU-Test.md)
+    - dem [STH-Test](#sth-test) oder
+    - dem [STU-Test](#stu-test)
 
     fortfahren.

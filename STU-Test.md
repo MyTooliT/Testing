@@ -1,4 +1,4 @@
-# STU Tests
+# STU-Test
 
 ## Test-Vorgang
 
