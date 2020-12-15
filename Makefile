@@ -13,6 +13,9 @@ html:
 pdf:
 	# Generate PDF
 	Rscript -e "bookdown::render_book('Preparation.md', 'bookdown::pdf_book')"
+	# Remove TeX log file
+	rm -f Testing.log
 
 clean:
 	rm -rf Bookdown
+	rm -f Testing.log
