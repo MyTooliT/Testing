@@ -16,7 +16,7 @@ aus den im Repo enthaltenen Dateien generieren kann. Voraussetzung dafür ist ne
 
 [bookdown]: https://bookdown.org
 
-Bei den untenstehenden Shell-Kommandos wird davon ausgegangen, dass es sich beim aktuellen Verzeichnis um den obersten Ordner dieses Repositories handelt.
+Bei den untenstehenden Shell-Kommandos wird davon ausgegangen, dass es sich beim aktuellen Verzeichnis um den obersten Ordner dieses Repositories handelt. Diese Kommandos werden auch verwendet um die Dokumentation mittels [GitHub Actions](https://github.com/MyTooliT/Testing/actions) zu erstellen. Die letzte Version dieser automatisch generierten Dokumentation befindet sich [hier](https://mytoolit.github.io/Testing).
 
 ### HTML
 
