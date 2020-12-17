@@ -1,4 +1,4 @@
-name: bookdown
+name: Bookdown
 
 on:
   push:
