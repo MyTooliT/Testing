@@ -20,10 +20,10 @@
    4. Production Date auf Datum des PCB (`STH` → `Production Date`) (Optional)
    5. Operator-Name auf den eigenen Namen setzen (`Operator` → `Name`) (Optional)
 
-3. `Test-STH` in Powershell ausführen:
+3. `test-sth` in Powershell ausführen:
 
    ```sh
-   Test-STH -v
+   test-sth -v
    ```
 
 4. Test-Ergebnis ansehen

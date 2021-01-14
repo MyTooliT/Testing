@@ -39,7 +39,7 @@ Damit der Test für eine STH oder STU durchgeführt werden kann benötigt man di
 
 1. Windows 10 installieren
 
-2. [Python (`3.6+`)](https://www.python.org/downloads/) installieren
+2. [Python (`3.7+`)](https://www.python.org/downloads/) installieren
 
    - Nicht vergessen **„Add Python to Path“** zu selektieren
 
@@ -55,7 +55,7 @@ Damit der Test für eine STH oder STU durchgeführt werden kann benötigt man di
 
 6. [PEAK-System Gerätetreiber für Windows](https://www.peak-system.com/PCAN-USB-FD.365.0.html) installieren
 
-7. Skript zur Installation der benötigten Python-Pakete im `ICOc`-Repo ausführen
+7. Skript zur Installation im `ICOc`-Repo ausführen
 
    1. Powershell im Ordner `ICOc` öffnen
       1. <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + Rechts-Click im Explorer
@@ -63,7 +63,7 @@ Damit der Test für eine STH oder STU durchgeführt werden kann benötigt man di
    2. Den folgenden Befehl ausführen:
 
    ```sh
-   pip install -r requirements.txt
+   pip install -e .
    ```
 
 8. Im STH-Ordner einen neuen Unter-Ordner namens `builds` erstellen und das [aktuelle Binary](https://github.com/MyTooliT/STH/releases) (.hex) dort speichern.
@@ -83,15 +83,7 @@ Damit der Test für eine STH oder STU durchgeführt werden kann benötigt man di
              └── manufacturingImageStuv2.1.10.hex
     ```
 
-11. Skript-Unterordner (üblicherweise `%USERPROFILE%\Documents\Projects\ICOc\Scripts`) zum User-Pfad (oder System-Pfad) hinzuzufügen. Eine Beschreibung wie das funktioniert gibt es z.B. [hier](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/). Danach kann man auf die Programme im `Scripts`-Ordner von einem beliebigen Ordner aus in der Powershell zugreifen.
-
-12. Execution Policies ändern damit Powershell-Skripte ausgeführt werden können:
-
-    ```sh
-    Set-ExecutionPolicy RemoteSigned
-    ```
-
-13. Nachdem die Software-Komponenten nur erfolgreich installiert und eingerichtet wurden kann man mit
+11. Nachdem die Software-Komponenten nur erfolgreich installiert und eingerichtet wurden kann man mit
 
     - dem [STH-Test](#sth-test) oder
     - dem [STU-Test](#stu-test)

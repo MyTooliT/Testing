@@ -10,10 +10,10 @@
    2. Production Date auf Datum des PCB (`STU` → `Production Date`) (Optional)
    3. Operator-Name auf den eigenen Namen setzen (`Operator` → `Name`) (Optional)
 
-2. `Test-STU` in Powershell ausführen:
+2. `test-stu` in Powershell ausführen:
 
    ```sh
-   Test-STU -v
+   test-stu -v
    ```
 
 3. Test-Ergebnis ansehen
