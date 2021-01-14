@@ -205,7 +205,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">1.2</span> Software</h2>
 <ol style="list-style-type: decimal">
 <li><p>Windows 10 installieren</p></li>
-<li><p><a href="https://www.python.org/downloads/">Python (<code>3.6+</code>)</a> installieren</p>
+<li><p><a href="https://www.python.org/downloads/">Python (<code>3.7+</code>)</a> installieren</p>
 <ul>
 <li>Nicht vergessen <strong>„Add Python to Path“</strong> zu selektieren</li>
 </ul></li>
@@ -218,7 +218,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="https://github.com/MyTooliT/ICOc">ICOc-Repo</a> klonen</li>
 </ol></li>
 <li><p><a href="https://www.peak-system.com/PCAN-USB-FD.365.0.html">PEAK-System Gerätetreiber für Windows</a> installieren</p></li>
-<li><p>Skript zur Installation der benötigten Python-Pakete im <code>ICOc</code>-Repo ausführen</p>
+<li><p>Skript zur Installation im <code>ICOc</code>-Repo ausführen</p>
 <ol style="list-style-type: decimal">
 <li>Powershell im Ordner <code>ICOc</code> öffnen
 <ol style="list-style-type: decimal">
@@ -227,7 +227,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol></li>
 <li>Den folgenden Befehl ausführen:</li>
 </ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">pip</span> install -r requirements.txt</span></code></pre></div></li>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">pip</span> install -e .</span></code></pre></div></li>
 <li><p>Im STH-Ordner einen neuen Unter-Ordner namens <code>builds</code> erstellen und das <a href="https://github.com/MyTooliT/STH/releases">aktuelle Binary</a> (.hex) dort speichern.</p></li>
 <li><p>Im STU-Ordner einen neuen Unter-Ordner namens <code>builds</code> erstellen und das <a href="https://github.com/MyTooliT/STU/releases">aktuelle Binary</a> (.hex) dort speichern.</p></li>
 <li><p>Nach diesen Schritten sollte die Ordner-Struktur in etwa so aussehen:</p>
@@ -239,9 +239,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 └── STU
     └── builds
          └── manufacturingImageStuv2.1.10.hex</code></pre></li>
-<li><p>Skript-Unterordner (üblicherweise <code>%USERPROFILE%\Documents\Projects\ICOc\Scripts</code>) zum User-Pfad (oder System-Pfad) hinzuzufügen. Eine Beschreibung wie das funktioniert gibt es z.B. <a href="https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/">hier</a>. Danach kann man auf die Programme im <code>Scripts</code>-Ordner von einem beliebigen Ordner aus in der Powershell zugreifen.</p></li>
-<li><p>Execution Policies ändern damit Powershell-Skripte ausgeführt werden können:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">Set-ExecutionPolicy</span> RemoteSigned</span></code></pre></div></li>
 <li><p>Nachdem die Software-Komponenten nur erfolgreich installiert und eingerichtet wurden kann man mit</p>
 <ul>
 <li>dem <a href="#sth-test">STH-Test</a> oder</li>
@@ -278,8 +275,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Production Date auf Datum des PCB (<code>STH</code> → <code>Production Date</code>) (Optional)</p></li>
 <li><p>Operator-Name auf den eigenen Namen setzen (<code>Operator</code> → <code>Name</code>) (Optional)</p></li>
 </ol></li>
-<li><p><code>Test-STH</code> in Powershell ausführen:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="ex">Test-STH</span> -v</span></code></pre></div></li>
+<li><p><code>test-sth</code> in Powershell ausführen:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">test-sth</span> -v</span></code></pre></div></li>
 <li><p>Test-Ergebnis ansehen</p>
 <ul>
 <li>Testergebnis <code>OK</code>: gehe zu Schritt 5</li>
@@ -310,8 +307,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Production Date auf Datum des PCB (<code>STU</code> → <code>Production Date</code>) (Optional)</li>
 <li>Operator-Name auf den eigenen Namen setzen (<code>Operator</code> → <code>Name</code>) (Optional)</li>
 </ol></li>
-<li><p><code>Test-STU</code> in Powershell ausführen:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a><span class="ex">Test-STU</span> -v</span></code></pre></div></li>
+<li><p><code>test-stu</code> in Powershell ausführen:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="ex">test-stu</span> -v</span></code></pre></div></li>
 <li><p>Test-Ergebnis ansehen</p>
 <ul>
 <li>Testergebnis <code>OK</code>: gehe zu Schritt 4</li>
