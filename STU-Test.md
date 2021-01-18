@@ -6,9 +6,9 @@
 
    1. Seriennummer des Boards
       1. Seriennummer ermitteln: Steht im LCD des Programming-Boards ganz unten
-      2. `STU` → `Programming Board` → `Serial Number` ändern
-   2. Production Date auf Datum des PCB (`STU` → `Production Date`) (Optional)
-   3. Operator-Name auf den eigenen Namen setzen (`Operator` → `Name`) (Optional)
+      2. `STU` → `PROGRAMMING BOARD` → `SERIAL NUMBER` ändern
+   2. Production Date auf Datum des PCB (`STU` → `PRODUCTION DATE`) (Optional)
+   3. Operator-Name auf den eigenen Namen setzen (`OPERATOR` → `NAME`) (Optional)
 
 2. `test-stu` in Powershell ausführen:
 

@@ -7,18 +7,18 @@
 
    1. Seriennummer des Boards
       1. Seriennummer ermitteln: Steht im LCD des Programming-Boards ganz unten
-      2. `STH` → `Programming Board` → `Serial Number` ändern
-   2. Name des PCB (`STH` → `Name`)
+      2. `STH` → `PROGRAMMING BOARD` → `SERIAL NUMBER` ändern
+   2. Name des PCB (`STH` → `NAME`)
       - Neue Boards sollten üblicherweise den Namen „Tanja“ haben
-   3. Verwendeter Beschleunigungssensor (`STH` → `Acceleration Sensor` → `Sensor`) (Optional): Welcher Sensor verwendet wird lässt sich üblicherweise an Hand eines Sticker an der Rückseite des PCB ermitteln. Ein Sticker mit der Aufschrift
+   3. Verwendeter Beschleunigungssensor (`STH` → `ACCELERATION SENSOR` → `SENSOR`) (Optional): Welcher Sensor verwendet wird lässt sich üblicherweise an Hand eines Sticker an der Rückseite des PCB ermitteln. Ein Sticker mit der Aufschrift
 
       - `1` weißt dabei auf den Sensor `ADXL1001` hin, während
       - `2` auf den Sensor `ADXL1002` verweist.
 
       Falls kein Sticker vorhanden ist, kann eine Lupe oder die Lupenfunktion eines Mobiltelefons recht hilfreich sein um die Identifikation auf dem Sensor zu lesen.
 
-   4. Production Date auf Datum des PCB (`STH` → `Production Date`) (Optional)
-   5. Operator-Name auf den eigenen Namen setzen (`Operator` → `Name`) (Optional)
+   4. Production Date auf Datum des PCB (`STH` → `PRODUCTION DATE`) (Optional)
+   5. Operator-Name auf den eigenen Namen setzen (`OPERATOR` → `NAME`) (Optional)
 
 3. `test-sth` in Powershell ausführen:
 
